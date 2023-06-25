@@ -1,0 +1,53 @@
+$theme: light;
+
+:root {
+  --searchInputImg: url('../assets/icons/search.svg');
+}
+
+[data-theme="light"] {
+  --backgroundColor: #ffffff;
+  --fontColor: #333;
+  --borderColor: #eceeed;
+}
+
+[data-theme="dark"] {
+  $theme: dark;
+  --backgroundColor: #333;
+  --fontColor: #eee;
+  --borderColor: #4b4b4b;
+}
+
+body {
+  background-color: var(--backgroundColor);
+
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  color: var(--fontColor);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  transition: background-color .5s ease-in-out;
+}
+
+h1 {
+  font-size: 3.5rem;
+
+  @media screen and (max-width: 600px) {
+    font-size: 2rem;
+  }
+}
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
