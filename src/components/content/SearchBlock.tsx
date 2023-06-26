@@ -1,12 +1,13 @@
 import styles from "./styles/SearchBlock.module.scss";
+import React from "react";
 
-const SearchBlock = () => {
+const SearchBlock = (): React.JSX.Element => {
     return (
         <div className={styles.search_container}>
             <input
                 className={styles.search_container__input}
-                type="text"
                 placeholder="Search"
+                type="text"
             />
         </div>
     );

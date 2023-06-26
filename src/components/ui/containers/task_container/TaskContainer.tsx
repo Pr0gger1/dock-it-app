@@ -1,9 +1,19 @@
+import React from "react";
 import styles from "./TaskContainer.module.scss";
+import {ITaskCard, ITaskContainer} from "../../../../interfaces";
+import TaskCard from "../../task_card/TaskCard.tsx";
 
-const TaskContainer = (): JSX.Element => {
+const TaskContainer = ({tasks}: ITaskContainer): React.JSX.Element => {
     return (
-        <div className={styles.taskContainer}>
-            <h1>Notes</h1>
+        <div className={styles.task_container}>
+            {
+                tasks.map((task: ITaskCard, index: number) =>
+                    <TaskCard
+                        key={index}
+                        description={task.description}
+                    />
+                )
+            }
         </div>
     );
 };

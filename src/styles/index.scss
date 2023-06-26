@@ -1,4 +1,3 @@
-$theme: light;
 
 :root {
   --searchInputImg: url('../assets/icons/search.svg');
@@ -8,17 +7,19 @@ $theme: light;
   --backgroundColor: #ffffff;
   --fontColor: #333;
   --borderColor: #eceeed;
+  --cardColor: rgba(103, 149, 255, 0.53)
 }
 
 [data-theme="dark"] {
-  $theme: dark;
   --backgroundColor: #333;
   --fontColor: #eee;
   --borderColor: #4b4b4b;
+  --cardColor: #5359ff;
 }
 
 body {
   background-color: var(--backgroundColor);
+  overflow: hidden;
 
   font-family: 'Raleway', sans-serif;
   line-height: 1.5;

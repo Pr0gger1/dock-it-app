@@ -1,0 +1,12 @@
+.task_category {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  min-width: 50%;
+  background-color: var(--cardColor);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+  &__title {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+}

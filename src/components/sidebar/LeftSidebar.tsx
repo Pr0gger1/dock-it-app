@@ -1,7 +1,8 @@
-import styles from "./LeftSidebar.module.scss";
+import React from "react";
 import ThemeSwitcher from "../ui/theme_switcher/ThemeSwitcher.tsx";
+import styles from "./LeftSidebar.module.scss";
 
-const LeftSidebar = (): JSX.Element => {
+const LeftSidebar = (): React.JSX.Element => {
     return (
         <aside id={styles["left-sidebar"]}>
             <h2 className={styles.logo}>
@@ -9,7 +10,6 @@ const LeftSidebar = (): JSX.Element => {
             </h2>
 
             <ThemeSwitcher/>
-
         </aside>
     );
 };
