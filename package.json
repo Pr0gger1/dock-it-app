@@ -3,11 +3,12 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://github.com/Pr0gger1/dock-it-app",
+  "homepage": "https://pr0gger1.github.io/dock-it-app/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "deploy": "npm run build && gh-pages -d dist",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
